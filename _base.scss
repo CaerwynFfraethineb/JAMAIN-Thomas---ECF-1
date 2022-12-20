@@ -1,5 +1,14 @@
-$main-color: rgb(48, 48, 48);
+$color-main: rgb(48, 48, 48);
+$size-title: 16px;
 
 body {
-    color: $main-color;
+    color: $color-main;
+}
+
+h1 {
+    font-size: $size-title;
+}
+
+ul, li {
+    list-style: none;
 }
