@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <title>Accueil</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <!-- Navbar V1 avec classes Bootstrap navbar -->
+        <nav class="navbar navbar-expand-lg nav-css">
             <div class="container-fluid">
                 <div class="d-flex flex-row align-items-center justify-content-evenly">
-                    <a class="navbar-brand col" href="accueil.html">
+                    <a class="navbar-brand col mx-5" href="accueil.html">
                         <img src="img/logo.png" alt="Logo" width="50" height="50">
                     </a>
-                    <h1 class="col">Sombres Légions</h1>
-                    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+                    <h2 class="col mx-5">Sombres Légions</h2>
+                    <div class="collapse navbar-collapse col mx-5 px-5" id="navbarSupportedContent">
                         <ul class="navbar-nav list-inline">
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link active" aria-current="page" href="accueil.html">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="accueil.html"><h3>Accueil</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link" href="association.html">Association</a>
+                                <a class="nav-link" href="association.html"><h3>Association</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link" href="jeux.html">Jeux</a>
+                                <a class="nav-link" href="jeux.html"><h3>Jeux</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.html"><h3>Contact</h3></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col mx-5 ps-5 pe-5">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
+                            <a class="nav-link dropdown-toggle" 
+                                href="#" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="accueil.html">Accueil</a></li>
@@ -50,13 +57,29 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="description">
-                <p>
-                    Sombres sont nos rêves, pire est la réalité. 
-                </p>
+        <div class="container-fluid">
+            <div class="row">
+                <img src="img/pen2.png" alt="pen" class="img-fluid" class="mx-5 px-5">
             </div>
-        </section>
+            <div class="row">
+                <section class="col">
+                    <!-- Introduction avec petite phrase d'accroche puis photo d'une table de jeu -->
+                    <div class="description my-3 py-3 text-center fw-semibold">
+                        <h1>Accueil</h1>
+                        <p>
+                            Sombres sont nos rêves, pire est la réalité. 
+                        </p>
+                        <img src="img/rp1-p.png" alt="Role Play" class="img-fluid my-1">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="ms-2 ps-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="accueil.html">Accueil</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+            </ol>
+          </nav>
     </main>
     <div class="container-fluid bg-light">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

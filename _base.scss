@@ -1,9 +1,18 @@
 $color-main: rgb(48, 48, 48);
+$color-background: rgb(226, 226, 226);
+$size-text: 12px;
 $size-title: 16px;
 
 body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: $color-background;
     color: $color-main;
 }
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
 
 h1 {
     font-size: $size-title;

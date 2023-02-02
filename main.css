@@ -1,5 +1,11 @@
 body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(226, 226, 226);
   color: rgb(48, 48, 48);
+}
+
+h1, h2 {
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
