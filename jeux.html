@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
-    <title>Accueil</title>
+    <title>Nos jeux</title>
 </head>
 <body>
     <header>
@@ -23,13 +23,13 @@
                     <div class="collapse navbar-collapse col mx-5 px-5" id="navbarSupportedContent">
                         <ul class="navbar-nav list-inline">
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link active" aria-current="page" href="accueil.html"><h3>Accueil</h3></a>
+                                <a class="nav-link"href="accueil.html"><h3>Accueil</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
                                 <a class="nav-link" href="association.html"><h3>Association</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
-                                <a class="nav-link" href="jeux.html"><h3>Jeux</h3></a>
+                                <a class="nav-link active" aria-current="page" href="jeux.html"><h3>Jeux</h3></a>
                             </li>
                             <li class="nav-item list-inline-item">
                                 <a class="nav-link" href="contact.html"><h3>Contact</h3></a>
@@ -45,9 +45,9 @@
                                 aria-expanded="false">
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="accueil.html">Accueil</a></li>
+                                <li><a class="dropdown-item" href="accueil.html">Accueil</a></li>
                                 <li><a class="dropdown-item" href="association.html">Notre Association</a></li>
-                                <li><a class="dropdown-item" href="jeux.html">Nos Jeux</a></li>
+                                <li><a class="dropdown-item active" href="jeux.html">Nos Jeux</a></li>
                                 <li><a class="dropdown-item" href="contact.html">Nous Contacter</a></li>
                             </ul>
                         </li>
@@ -59,29 +59,48 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <img src="img/pen2.png" alt="pen" class="img-fluid" class="mx-5 px-5">
+                <img src="img/pen2.png" alt="pen" class="img-fluid mx-5 px-5">
             </div>
             <div class="row">
-                <section class="col">
-                    <!-- Introduction avec petite phrase d'accroche puis photo d'une table de jeu -->
-                    <div class="description my-3 py-3 text-center fw-semibold">
-                        <h1>Mais qu'est-ce donc que le Jeu de Rôle ?</h1>
-                        <blockquote cite="">
-                            <strong>Le jeu de rôle (JdR) est un jeu de simulation</strong> qui permet à chaque participant d'incarner un personnage de son invention et de le faire évoluer dans un univers imaginaire.
-                            <!-- Citation Larousse -->
-                        </blockquote>
-                            <p>
-                            <!-- Phrase à replacer :  -->
-                            </p>
-                        <img src="img/rp1-p.png" alt="Role Play" class="img-fluid my-1">
-                    </div>
-                </section>
+                <h1 class="font-weight-bold">Nos jeux</h1>
             </div>
-        </div>
+            <div class="row">
+                <div class="card mx-5 px-5" style="width: 18rem;">
+                    <img class="card-img-top" src="" alt="Sombres Légions">
+                    <div class="card-body">
+                        <h5 class="card-title">Sombres Légions</h5>
+                        <p class="card-text">Sombres sont nos rêves, pire est la réalité. Jouer avec une planche ouija n'est jamais sans conséquence... qui sait ce qui pourrait arriver et jusqu'où cela vous mènera. 
+                            Angoisse assurée !
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card mx-5 px-5" style="width: 18rem;">
+                    <img class="card-img-top" src="" alt="Donjon de Naheulbeuk">
+                    <div class="card-body">
+                        <h5 class="card-title">Donjon de Naheulbeuk</h5>
+                        <p class="card-text">Vous aimez les haches, les <span class="small">gougoutes</span> et la <span class="mark">BASTON</span> ?! Le donjon de Naheulbeuk est là pour vous ! 
+                            Aventure d'<span class="text-decoration-line-through">Héroïque</span> Fantasy Garanti 0% sérieux, parfait pour les <span class="text-success">débilus</span> !</p>
+                        <a href="" class="btn btn-primary">Site Naheulbeuk Officiel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card mx-5 px-5" style="width: 18rem;">
+                    <img class="card-img-top" src="" alt="Donjons & Dragons">
+                    <div class="card-body">
+                        <h5 class="card-title">Donjons & Dragons</h5>
+                        <p class="card-text">Jeu mythique qui a créé le genre du Jeu de Rôle Médiéval Fantasy dans les années 70, c'est la base incontournable du genre. Barbare Orc, Druide Elfe ou Ensorceleur Humain, soyez qui vous voulez et suivez la voie qui vous sied.</p>
+                        <a href="" class="btn btn-primary">Site D&D Français</a>
+                    </div>
+                </div>
+            </div>
+
         <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="ms-2 ps-2">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="accueil.html">Accueil</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+              <li class="breadcrumb-item active" aria-current="page">Nos Jeux</li>
             </ol>
           </nav>
     </main>
