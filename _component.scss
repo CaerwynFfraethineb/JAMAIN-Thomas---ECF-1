@@ -1,0 +1,11 @@
+$width-carousel: 60em;
+
+.border-c {
+    border: 0.5rem outset rgb(202, 202, 202);
+    box-shadow: 0 0 0 0.5rem rgb(165, 165, 165);
+    border-radius: 12px;
+  }
+
+.img-carousel {
+    width: $width-carousel;
+}

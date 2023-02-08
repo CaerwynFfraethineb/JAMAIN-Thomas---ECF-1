@@ -1,7 +1,8 @@
 $color-main: rgb(48, 48, 48);
 $color-background: rgb(226, 226, 226);
 $size-text: 12px;
-$size-title: 16px;
+$size-title: 1.5rem;
+$size-title2: 1.3rem;
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -9,13 +10,18 @@ body {
     color: $color-main;
 }
 
-h1, h2 {
+h1, h2, h5 {
     font-family: 'Roboto Slab', serif;
+    font-weight: bold;
 }
 
 
 h1 {
     font-size: $size-title;
+}
+
+h2 {
+    font-size: $size-title2;
 }
 
 ul, li {
