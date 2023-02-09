@@ -15,10 +15,26 @@
         <!-- Navbar V1 avec classes Bootstrap navbar -->
         <nav class="navbar navbar-expand-lg nav-css">
             <div class="container-fluid">
-                <div class="d-flex flex-row align-items-center justify-content-evenly">
+                <div class="d-flex flex-row align-items-center justify-content-center">
                     <a class="navbar-brand col mx-5" href="accueil.html">
                         <img src="img/logo.png" alt="Logo" width="50" height="50">
                     </a>
+                    <div class="col pl-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" 
+                                href="#" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="accueil.html">Accueil</a></li>
+                                <li><a class="dropdown-item" href="association.html">Notre Association</a></li>
+                                <li><a class="dropdown-item" href="jeux.html">Nos Jeux</a></li>
+                                <li><a class="dropdown-item active" href="contact.html">Nous Contacter</a></li>
+                            </ul>
+                        </li>
+                    </div>
                     <h2 class="col mx-5">Sombres Légions</h2>
                     <div class="collapse navbar-collapse col mx-5 px-5" id="navbarSupportedContent">
                         <ul class="navbar-nav list-inline">
@@ -35,22 +51,6 @@
                                 <a class="nav-link active" aria-current="page" href="contact.html"><h3>Contact</h3></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col mx-5 ps-5 pe-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" 
-                                href="#" 
-                                role="button" 
-                                data-bs-toggle="dropdown" 
-                                aria-expanded="false">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="accueil.html">Accueil</a></li>
-                                <li><a class="dropdown-item" href="association.html">Notre Association</a></li>
-                                <li><a class="dropdown-item" href="jeux.html">Nos Jeux</a></li>
-                                <li><a class="dropdown-item active" href="contact.html">Nous Contacter</a></li>
-                            </ul>
-                        </li>
                     </div>
                 </div>
             </div>
@@ -71,13 +71,13 @@
             </div> 
         </div>
 
-        <form>
-            <div class="form-row text-center">
+        <form class="container-fluid">
+            <div class="form-row text-center m-auto row align-items-cente justify-content-center">
                 <div class="form-group col-md-6 mx-3">
                     <label for="inputName">Nom ou pseudonyme d'Assassin Gobelin</label>
                     <input type="name" class="form-control" id="inputName" placeholder="Nom">
                 </div>
-                <div class="form-group col-md-6 mx-3">
+                <div class="form-group col-md-6 mx-3 py-2">
                     <label for="inputEmail">Adresse e-mail de l'intéressé</label>
                     <input type="email" class="form-control" id="inputMail" placeholder="Adresse Email">
                 </div>
@@ -85,7 +85,7 @@
                     <label for="inputQuestion">Raconte nous un peu...</label>
                     <textarea class="form-control" id="inputQuestion" rows="6" placeholder="blablabla"></textarea>
                 </div>
-                <div class="pb-5">
+                <div class="py-3">
                     <p>Plutôt...</p>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="classe1">
@@ -111,7 +111,7 @@
             </ol>
         </nav>
     </main>
-    <footer class="container-fluid bg-light border mx-3 my-1 px-3 py-1 border-light">
+    <footer class="container-fluid bg-light">
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div class="col d-flex align-items-center align-self-center">
                 <h3 class="text-center font-italic font-weight-light">Sombres sont nos rêves, pire est la réalité.</h3>
